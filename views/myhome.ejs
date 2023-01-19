@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+  <body >
+    <div class="container">
+        <h1>Hey,<%=user.name%></h1>
+        <p><i>User ID: @<%=user.userName%> </i> </p>
+        <p class="pt-0"><i>User Email: <%=user.email%> </i> </p>
+
+        <h5 class="mb-4 "><i>age: </i><%=user.age%></h5>
+        <h5 class="mx-3 mb-5"><i>Total &#10084; got : </i> <%= user.like.length%> </h5>
+
+        <p style="width: 70%;" class="my-4 "><i>bio:-</i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam iure tempore cupiditate distinctio cum dolorum quia incidunt fugit, itaque, nam assumenda perspiciatis corporis nisi blanditiis natus iusto, corrupti eaque quos.</p>
+
+        <div style="width: 70%;" class="d-flex justify-content-around mt-5">
+
+        <a href="/cards">Explore Profiles</a>
+
+        <a href="/create"><button type="button" class="btn btn-info">LogOut</button></a>
+       </div>
+    </div>
+  </body>
+</html>
